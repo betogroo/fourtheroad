@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  const imgSrc = new URL('~/assets/img/fourtheroad/fourtheroad.jpeg', import.meta.url).href
   definePageMeta({
     layout: 'no-nav',
     menu: {
@@ -12,5 +13,7 @@
 </script>
 
 <template>
-  <ui-page> Aqui vai a fotos </ui-page>
+  <div class="d-flex justify-center">
+    <v-img :aspect-ratio="1" class="bg-surface elevation-3" :src="imgSrc" width="200" />
+  </div>
 </template>
