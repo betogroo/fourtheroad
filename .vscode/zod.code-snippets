@@ -1,0 +1,43 @@
+{
+  "Zod Import Types": {
+    "scope": "javascript,typescript",
+    "prefix": "zod-import-types",
+    "body": ["import z from 'zod'", "import type { $1 } from '~/types'"],
+    "description": "Import z and types from create schemas",
+  },
+  "Schema based on type": {
+    "scope": "javascript,typescript",
+    "prefix": "zod-schema-based-types",
+    "body": ["export const $1Schema: z.ZodType<$1> = z.object({", "$2", "})"],
+    "description": "Create schema based on types",
+  },
+  "Import schemas and types": {
+    "scope": "javascript,typescript",
+    "prefix": "zod-import-schemas-and-types",
+    "body": [
+      "import type { $1 } from '~/types'",
+      "import { $1RowsSchema, $1Schema } from '~/schemas'",
+    ],
+    "description": "Import Zod schemas and types",
+  },
+  "Import Z": {
+    "scope": "javascript,typescript",
+    "prefix": "zod-z",
+    "body": "import z from 'zod'",
+    "description": "Basic Zod import",
+  },
+  "BaseSchema": {
+    "scope": "javascript, typescript",
+    "prefix": "zod-basic-schema",
+    "description": "Basic Scaffold for Zod Schemas",
+    "body": [
+      "import { z } from 'zod'",
+      "import { BaseEntitySchema } from '~/schemas/uge/entities'",
+      "import { nameRule } from '~/schemas/rules'",
+      "\nexport const $1Schema = BaseEntitySchema.extend({",
+      "  name: nameRule,",
+      "}).strict()",
+      "",
+    ],
+  },
+}

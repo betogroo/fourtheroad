@@ -1,0 +1,13 @@
+import type { Database } from '~/types/supabase/database.types'
+
+export type TableName = keyof Database['public']['Tables']
+export type ViewName = keyof Database['public']['Views']
+
+export type Tables<T extends keyof Database['public']['Tables']> =
+  Database['public']['Tables'][T]['Row']
+
+export type Inserts<T extends keyof Database['public']['Tables']> =
+  Database['public']['Tables'][T]['Insert']
+
+export type Updates<T extends keyof Database['public']['Tables']> =
+  Database['public']['Tables'][T]['Update']
