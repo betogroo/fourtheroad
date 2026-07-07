@@ -35,7 +35,7 @@ export default defineNuxtConfig({
       login: '/login',
       saveRedirectToCookie: true,
     },
-    redirect: true,
+    redirect: false,
     types: '~/types/supabase/database.types.ts',
   },
   veeValidate: {

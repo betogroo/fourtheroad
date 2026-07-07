@@ -11,7 +11,7 @@
   <app-public-container>
     <ui-empty-state
       :img-src="imgSrc"
-      text="A chave se quebrou e a página não foi encontrada."
+      text="A página que você acessou ainda não está disponível. Estamos na estrada, e logo logo você verá mais aventuras"
       title="Oooops! Algo deu errado"
   /></app-public-container>
 </template>

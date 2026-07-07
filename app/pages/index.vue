@@ -1,8 +1,5 @@
 <script setup lang="ts">
-  import z from 'zod'
-  import { DemandStatusReadSchema } from '~/schemas/uge/dto/demand-status.read.dto'
-  import type { DemandStatusRead } from '~/types'
-
+  const imgSrc = new URL('~/assets/img/fourtheroad/fourtheroad.jpeg', import.meta.url).href
   definePageMeta({
     layout: 'no-nav',
     menu: {
@@ -13,15 +10,10 @@
       priority: 'index',
     },
   })
-
-  const { fetchAll } = useTableFetch<DemandStatusRead[]>({
-    table: 'demand_status',
-    schema: z.array(DemandStatusReadSchema),
-    orderBy: [{ column: 'sort_order' }],
-  })
-  const demandStatus = await fetchAll()
 </script>
 
 <template>
-  <ui-page> Aqui vai a fotos </ui-page>
+  <div class="d-flex justify-center">
+    <v-img :aspect-ratio="1" class="bg-surface elevation-3" :src="imgSrc" width="200" />
+  </div>
 </template>
