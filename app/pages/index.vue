@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <div class="d-flex justify-center">
-    <v-img :aspect-ratio="1" class="bg-surface elevation-3" :src="imgSrc" width="200" />
-  </div>
+  <v-container>
+    <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="fit-content" />
+  </v-container>
 </template>
