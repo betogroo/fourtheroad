@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  const imgSrc = new URL('~/assets/img/fourtheroad/fourtheroad.jpeg', import.meta.url).href
+  const imgSrc = new URL('~/assets/img/fourtheroad/fourtheroad.png', import.meta.url).href
   definePageMeta({
     layout: 'no-nav',
     menu: {
