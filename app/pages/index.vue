@@ -18,17 +18,14 @@
   <app-public-container>
     <ui-card class="mx-auto" variant="text" width="350">
       <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="325" />
-      <ui-list>
-        <ui-list-item
-          v-for="item in drawerMenu"
-          :key="item.path"
-          hide-divider
-          hide-menu
-          :icon="item.menu?.icon"
-          :title="item.menu?.title"
-          :to="item.path"
-        />
-      </ui-list>
-    </ui-card>
+      <fourtheroad-link-card
+        v-for="item in drawerMenu"
+        :key="item.path"
+        class="my-2"
+        color="red"
+        :icon="item.menu?.icon"
+        :title="item.menu?.title"
+        :to="item.path"
+    /></ui-card>
   </app-public-container>
 </template>
