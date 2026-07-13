@@ -4,7 +4,7 @@
     menu: {
       title: 'Galeria',
       hidden: false,
-      icon: 'eye',
+      icon: 'gallery',
       areas: ['drawer'],
       priority: 'gallery',
     },

@@ -23,6 +23,7 @@
           v-for="item in drawerMenu"
           :key="item.path"
           hide-menu
+          :icon="item.menu?.icon"
           :title="item.menu?.title"
           :to="item.path"
         />

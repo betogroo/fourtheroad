@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import type { Icon } from '~/types/ui/icons'
+
   type ClickableProps = {
     clickable: true
     // eslint-disable-next-line vue/require-default-prop
@@ -19,6 +21,7 @@
     value?: string | number
     hideDivider?: boolean
     hideMenu?: boolean
+    icon: Icon
   }
   export type UiListItemProps = BaseProps & (ClickableProps | LinkProps | StaticProps)
 
@@ -66,6 +69,7 @@
     variant="flat"
     @click="handleClick"
   >
+    <template #prepend><ui-btn-icon :icon="icon" /></template>
     <v-row no-gutters>
       <ui-list-item-column :sm="4">
         <ui-heading :level="5" weight="bold">{{ title }}</ui-heading>

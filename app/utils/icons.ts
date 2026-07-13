@@ -21,4 +21,7 @@ export const ICONS = {
   doc: 'mdi-file-document',
   db: 'mdi-database',
   product: 'mdi-car',
+  gallery: 'mdi-image-outline',
+  route: 'mdi-routes',
+  tip: 'mdi-lightbulb-on-outline',
 } as const

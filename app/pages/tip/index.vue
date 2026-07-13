@@ -2,9 +2,9 @@
   definePageMeta({
     layout: 'no-nav',
     menu: {
-      title: 'Rota',
+      title: 'Dicas',
       hidden: false,
-      icon: 'product',
+      icon: 'tip',
       areas: ['drawer'],
       priority: 'tip',
     },
