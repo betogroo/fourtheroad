@@ -13,7 +13,14 @@
 </script>
 
 <template>
-  <v-container>
-    <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="fit-content" />
-  </v-container>
+  <app-public-container>
+    <ui-card variant="text">
+      <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="300" />
+      <ui-list>
+        <ui-list-item hide-menu title="A Rota" to="/route" />
+        <ui-list-item hide-menu title="Galeria" to="/gallery" />
+        <ui-list-item hide-menu title="Dicas" to="/tip" />
+      </ui-list>
+    </ui-card>
+  </app-public-container>
 </template>
