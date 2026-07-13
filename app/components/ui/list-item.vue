@@ -69,10 +69,12 @@
     variant="flat"
     @click="handleClick"
   >
-    <template #prepend><ui-btn-icon :icon="icon" /></template>
     <v-row no-gutters>
-      <ui-list-item-column :sm="4">
-        <ui-heading :level="5" weight="bold">{{ title }}</ui-heading>
+      <ui-list-item-column :sm="6">
+        <div class="d-flex align-center gap-2">
+          <ui-btn-icon :icon="icon" />
+          <ui-heading :level="6" weight="bold">{{ title }}</ui-heading>
+        </div>
         <slot name="subtitle">
           <ui-heading v-if="subtitle" :level="6">{{ subtitle }}</ui-heading>
         </slot>

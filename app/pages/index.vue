@@ -16,12 +16,13 @@
 
 <template>
   <app-public-container>
-    <ui-card variant="text">
-      <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="300" />
+    <ui-card class="mx-auto" variant="text" width="350">
+      <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="325" />
       <ui-list>
         <ui-list-item
           v-for="item in drawerMenu"
           :key="item.path"
+          hide-divider
           hide-menu
           :icon="item.menu?.icon"
           :title="item.menu?.title"
