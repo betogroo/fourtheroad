@@ -52,9 +52,9 @@ export default defineNuxtConfig({
     },
     registerType: 'autoUpdate',
     manifest: {
-      name: 'Nuxt App',
-      short_name: 'App',
-      description: 'Nuxt App Nuxt 4 PWA',
+      name: 'Four The Road',
+      short_name: 'Four The Road',
+      description: 'Quatro Pessoas, Uma Rota, Uma Aventura',
       theme_color: '#ffffff',
       background_color: '#ffffff',
       display: 'standalone',
