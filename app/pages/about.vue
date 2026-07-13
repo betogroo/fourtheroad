@@ -4,7 +4,6 @@
     menu: {
       title: 'Sobre',
       hidden: false,
-      areas: ['navbar', 'drawer'],
       icon: 'about',
       priority: 'about',
     },

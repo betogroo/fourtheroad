@@ -1,6 +1,6 @@
 export const MENU_ORDER = {
   navbar: ['index', 'demand', 'products', 'about', 'contact'],
-  drawer: ['index', 'about'],
+  drawer: ['route', 'gallery', 'tip'],
   footer: ['index'],
   components: ['dialog', 'notifications'],
   content: ['app', 'components', 'db', 'docs'],

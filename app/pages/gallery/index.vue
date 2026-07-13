@@ -5,10 +5,12 @@
       title: 'Galeria',
       hidden: false,
       icon: 'eye',
+      areas: ['drawer'],
+      priority: 'gallery',
     },
   })
 </script>
 
 <template>
-  <ui-page title="Aqui vai a galeria">...</ui-page>
+  <ui-page show-back title="Aqui vai a galeria">...</ui-page>
 </template>

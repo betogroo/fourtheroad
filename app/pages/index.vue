@@ -4,12 +4,14 @@
     layout: 'no-nav',
     menu: {
       title: 'Home Page',
-      areas: ['navbar', 'drawer'],
       hidden: false,
       icon: 'home',
-      priority: 'index',
     },
   })
+
+  const { getMenuByArea } = useNavigation()
+  const drawerMenu = getMenuByArea('drawer')
+  console.log(drawerMenu)
 </script>
 
 <template>
@@ -17,9 +19,13 @@
     <ui-card variant="text">
       <v-img class="mx-auto" rounded="xl" :src="imgSrc" width="300" />
       <ui-list>
-        <ui-list-item hide-menu title="A Rota" to="/route" />
-        <ui-list-item hide-menu title="Galeria" to="/gallery" />
-        <ui-list-item hide-menu title="Dicas" to="/tip" />
+        <ui-list-item
+          v-for="item in drawerMenu"
+          :key="item.path"
+          hide-menu
+          :title="item.menu?.title"
+          :to="item.path"
+        />
       </ui-list>
     </ui-card>
   </app-public-container>

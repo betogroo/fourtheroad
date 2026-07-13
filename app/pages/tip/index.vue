@@ -5,10 +5,12 @@
       title: 'Rota',
       hidden: false,
       icon: 'product',
+      areas: ['drawer'],
+      priority: 'tip',
     },
   })
 </script>
 
 <template>
-  <ui-page title="Aqui vai as dicas">...</ui-page>
+  <ui-page show-back title="Aqui vai as dicas">...</ui-page>
 </template>
